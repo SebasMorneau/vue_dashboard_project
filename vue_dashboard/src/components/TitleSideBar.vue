@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row :align="align" no-gutters>
+    <v-row no-gutters>
       <v-col cols="6">
         <v-list-item>
           <v-list-item-content>
@@ -19,7 +19,7 @@
     </v-row>
 
     <v-divider></v-divider>
-    <v-row :align="align" no-gutters>
+    <v-row no-gutters>
       <v-list-item>
         <v-list-item-content>
           <v-col cols="12" sm="5">
@@ -36,7 +36,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-row>
-    <v-row :align="align" no-gutters>
+    <v-row no-gutters>
       <v-col cols="6"
         ><div class="d-flex align-center flex-column start-button active">
           Ouvert
@@ -49,9 +49,9 @@
       >
     </v-row>
 
-    <v-row :align="align" no-gutters>
+    <v-row no-gutters>
       <v-col cols="12">
-        <v-list-item class="grow">
+        <v-list-item>
           <v-list-item-avatar color="grey darken-3">
             <img
               alt="Avatar"

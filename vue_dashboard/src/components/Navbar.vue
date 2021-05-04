@@ -12,14 +12,16 @@
     </div>
     <v-toolbar-title
       class="toolbar-items"
-      v-for="(toolbarItem, i) in toolbarItems"
-      :key="i"
+      v-for="toolbarItem in toolbarItems"
+      :key="toolbarItem"
       >{{ toolbarItem }}</v-toolbar-title
     >
 
     <v-spacer></v-spacer>
-
-    <v-toolbar-title v-for="(toolbarItemIcon, i) in toolbarItemsIcons" :key="i">
+    <v-toolbar-title
+      v-for="toolbarItemIcon in toolbarItemsIcons"
+      :key="toolbarItemIcon"
+    >
       <v-btn icon>
         <v-icon class="toolbar-items">{{ toolbarItemIcon }}</v-icon>
       </v-btn>
