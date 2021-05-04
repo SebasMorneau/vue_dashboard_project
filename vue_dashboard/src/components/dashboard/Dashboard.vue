@@ -170,7 +170,7 @@ export default {
           id: "0",
           text: "Honoraires",
           icon: "mdi-currency-usd",
-          info: "100$/h",
+          info: "17.5 millions $/h",
         },
         { id: "1", text: "Durée", icon: "mdi-timer-outline", info: "2h" },
         {
