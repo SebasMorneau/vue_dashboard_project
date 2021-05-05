@@ -6,10 +6,10 @@
         <v-col cols="12" sm="2">
           <TitleSideBar />
         </v-col>
-        <v-col cols="12" sm="3">
+        <v-col cols="12" sm="2">
           <ActionSideBar />
         </v-col>
-        <v-col cols="12" sm="7">
+        <v-col cols="12" sm="8">
           <Dashboard />
         </v-col>
       </v-row>

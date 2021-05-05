@@ -31,114 +31,67 @@
         </v-row>
       </v-container>
     </v-col>
-
     <v-col cols="4">
       <v-container>
         <v-row>
           <v-col cols="12">
-            <v-icon>mdi-chevron-left-box-outline</v-icon>
-            11/11/2020 - 11/11/2020
-            <v-icon>mdi-chevron-right-box-outline</v-icon>
+            <v-layout align-center justify-center column fill-height>
+              <v-flex row date-display>
+                <v-icon>mdi-chevron-left-box-outline</v-icon>
+                <p>11/11/2020 - 11/11/2020</p>
+                <v-icon>mdi-chevron-right-box-outline</v-icon>
+              </v-flex>
+            </v-layout>
           </v-col>
         </v-row>
         <v-row>
-          <v-col>
-            <v-list>
-              <v-list-item>
-                <template>
-                  <v-list-item-icon>
-                    <v-icon></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-subtitle style="margin-left: 10px"
-                      >Budget restant</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                  <v-list-item-content class="d-flex flex-row-reverse">
-                    <v-list-item-subtitle class="d-flex flex-row-reverse"
-                      >20h</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                </template>
-              </v-list-item>
-              <v-list-item>
-                <template>
-                  <v-list-item-icon>
-                    <v-icon></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-subtitle>
-                      <v-icon>mdi-circle-medium</v-icon>
-                      Disponibilité restante</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                  <v-list-item-content class="d-flex flex-row-reverse">
-                    <v-list-item-subtitle
-                      class="d-flex flex-row-reverse"
-                      style="margin-left: 10px"
-                      >6h</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                </template>
-              </v-list-item>
-              <v-list-item>
-                <template>
-                  <v-list-item-icon>
-                    <v-icon></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-subtitle>
-                      <v-icon>mdi-circle-medium</v-icon>Planifié sur d'autres
-                      tâches</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                  <v-list-item-content class="d-flex flex-row-reverse">
-                    <v-list-item-subtitle class="d-flex flex-row-reverse"
-                      >2h</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                </template>
-              </v-list-item>
-              <v-list-item>
-                <template>
-                  <v-list-item-icon>
-                    <v-icon></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-subtitle>
-                      <v-icon>mdi-circle-medium</v-icon>Planifié sur cette
-                      tâche</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                  <v-list-item-content class="d-flex flex-row-reverse">
-                    <v-list-item-subtitle
-                      class="d-flex flex-row-reverse"
-                      style="margin-left: 10px"
-                      >2h</v-list-item-subtitle
-                    >
-                  </v-list-item-content>
-                </template>
-              </v-list-item>
-            </v-list>
-            <v-card class="d-flex justify-space-around mb-6" max-width="423">
-              <v-tabs>
-                <v-tabs-slider color="white"></v-tabs-slider>
-                <v-tab> Manuel </v-tab>
+          <v-container>
+            <div class="list">
+              <v-row>
+                <v-col><h4>Budget restant</h4></v-col>
+                <v-col align="right"><b>20</b>h</v-col>
+              </v-row>
+              <v-row>
+                <v-icon>mdi-circle-medium</v-icon>
+                <v-col><p>Disponibilité restante</p></v-col>
+                <v-col align="right"><b>6</b>h</v-col>
+              </v-row>
+              <v-row>
+                <v-icon style="color: #fb8c3f">mdi-circle-medium</v-icon>
+                <v-col><p>Planifié sur d'autres tâches</p></v-col>
+                <v-col align="right"><b>2</b>h</v-col>
+              </v-row>
+              <v-row style="color: #fb8c3f">
+                <v-icon style="color: #fb8c3f">mdi-circle-medium</v-icon>
+                <v-col><p>Planifié sur cette tâchee</p></v-col>
+                <v-col align="right"><b>2</b>h</v-col>
+              </v-row>
+            </div>
+          </v-container>
+        </v-row>
+      </v-container>
+
+      <v-container style="margin-top: 160px">
+        <v-row>
+          <v-container>
+            <v-card>
+              <v-tabs center-active>
+                <v-tab>Manuel</v-tab>
                 <v-tab>
-                  <v-icon>mdi-format-horizontal-align-right</v-icon>
-                </v-tab>
+                  <v-icon>mdi-format-horizontal-align-right</v-icon></v-tab
+                >
                 <v-tab>
-                  <v-icon>mdi-format-horizontal-align-center</v-icon>
-                </v-tab>
+                  <v-icon>mdi-format-horizontal-align-center</v-icon></v-tab
+                >
                 <v-tab>
-                  <v-icon>mdi-format-horizontal-align-left</v-icon>
-                </v-tab>
-              </v-tabs></v-card
-            >
-          </v-col>
-        </v-row></v-container
-      ></v-col
-    >
+                  <v-icon>mdi-format-horizontal-align-left</v-icon></v-tab
+                >
+              </v-tabs>
+            </v-card>
+          </v-container>
+        </v-row>
+      </v-container>
+    </v-col>
   </v-row>
 </template>
 
@@ -207,6 +160,7 @@ export default {
 </script>
 
 <style scoped>
+/* Graphical Bar */
 .progress-bar {
   height: 200px;
   width: 40px;
@@ -219,5 +173,28 @@ export default {
   padding: 20px;
   border: 1px solid #d8d6d4;
   border-radius: 3px;
+}
+/* Date, Time and budget */
+.date-display p {
+  border: 1px solid #d8d6d4;
+  background-color: #eeeeee;
+  margin: 5px;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.date-display .v-icon {
+  font-size: 35px;
+}
+.list .row {
+  margin-bottom: -30px;
+  font-size: 14px;
+}
+.list .v-icon {
+  margin-top: -15px;
+}
+.action {
+  float: left;
+  border: 1px solid #d8d6d4;
 }
 </style>
