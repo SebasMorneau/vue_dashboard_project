@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopFilterContainer />
+    <DescriptionContainer />
 
     <v-divider></v-divider>
     <FilterContainer />
@@ -105,14 +105,14 @@
 </template>
 
 <script>
-import TopFilterContainer from "./TopFilterContainer";
+import DescriptionContainer from "./DescriptionContainer";
 import FilterContainer from "./FilterContainer";
 import Graph from "./Graph";
 
 export default {
   name: "Dashboard",
   components: {
-    TopFilterContainer,
+    DescriptionContainer,
     FilterContainer,
     Graph,
   },

@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: "TopFilterContainer",
+  name: "DescriptionContainer",
   data() {
     return {
       items: [

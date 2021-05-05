@@ -149,6 +149,7 @@ export default {
   },
   methods: {
     plusHeight: function (id) {
+      // add 10 each time the button is clicked by a query to the element
       var newHeight =
         parseInt(document.querySelector("#progress-" + id).style.height) - 10;
       document.querySelector("#progress-" + id).style.height = newHeight + "%";
