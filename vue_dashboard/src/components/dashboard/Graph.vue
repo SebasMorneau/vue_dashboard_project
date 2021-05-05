@@ -9,7 +9,7 @@
                 <div
                   class="progress-data"
                   v-bind:id="'progress-' + date.id"
-                  v-bind:style="'height: ' + height + '%'"
+                  v-bind:style="'height: ' + date.hour + '%'"
                 ></div>
               </div>
             </v-col>
@@ -100,42 +100,49 @@ export default {
   name: "Graph",
   data() {
     return {
-      height: 10,
+      height: 0,
       dates: [
         {
           id: "0",
           number: "28",
           month: "Fev",
+          hour: "70",
         },
         {
           id: "1",
           number: "1",
           month: "Mar",
+          hour: "40",
         },
         {
           id: "2",
           number: "2",
           month: "Mar",
+          hour: "20",
         },
         {
           id: "3",
           number: "3",
           month: "Mar",
+          hour: "0",
         },
         {
           id: "4",
           number: "4",
           month: "Mar",
+          hour: "100",
         },
         {
           id: "5",
           number: "5",
           month: "Mar",
+          hour: "70",
         },
         {
           id: "6",
           number: "6",
           month: "Mar",
+          hour: "90",
         },
       ],
     };
