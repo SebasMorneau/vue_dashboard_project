@@ -1,10 +1,10 @@
 <template>
   <div>
     <DescriptionContainer />
-
+    <!-- Top of the page with the main tab -->
     <v-divider></v-divider>
+    <!-- Section to apply some filter -->
     <FilterContainer />
-
     <v-divider></v-divider>
     <v-row>
       <v-col cols="8">
