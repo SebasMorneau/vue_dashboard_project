@@ -1,15 +1,16 @@
 <template>
   <v-app-bar app>
-    <div class="d-flex align-center">
-      <v-img
-        alt="Beeye Logo"
-        class="shrink mr-2"
-        contain
-        src="../assets/LogoFull.png"
-        transition="scale-transition"
-        width="90"
-      />
-    </div>
+    <v-toolbar-title>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Logo"
+          class="shrink mr-2"
+          contain
+          src="../assets/avengers-logo.png"
+          transition="scale-transition"
+          width="50"
+        /></div
+    ></v-toolbar-title>
     <v-toolbar-title
       class="toolbar-items"
       v-for="toolbarItem in toolbarItems"

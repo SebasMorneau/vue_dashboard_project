@@ -1,4 +1,4 @@
-# Test de développeur Front End Beeye
+# Test de développeur
 
 ## Choix de Framework : Vue.js et Vuetify
 
